@@ -1,0 +1,91 @@
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 360px;
+  background-image: url('icon.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #182230;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.app { 
+  padding: 18px; 
+  /* Zmniejszamy krycie tła kontenera z 0.92 na 0.5, dzięki czemu obrazek z tyłu będzie mocno widoczny */
+  background-color: rgba(255, 255, 255, 0.55);
+  min-height: 100vh;
+}
+
+header { margin-bottom: 18px; }
+.brand { font-size: 19px; font-weight: 750; }
+.subtitle { margin-top: 3px; color: #4b5563; font-size: 12px; }
+
+.field { display: block; margin-bottom: 13px; }
+.field span {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 12px;
+  font-weight: 650;
+  color: #1f2937;
+}
+
+select, input[type="number"] {
+  width: 100%;
+  padding: 10px 11px;
+  border: 1px solid #d7dce5;
+  border-radius: 9px;
+  /* Pola wyboru i inputy pozostają w pełni białe, żeby tekst w nich był czytelny */
+  background: rgba(255, 255, 255, 0.95);
+  color: #182230;
+  outline: none;
+}
+
+select:focus, input[type="number"]:focus { border-color: #4f7cff; }
+
+button {
+  width: 100%;
+  border: 0;
+  border-radius: 9px;
+  padding: 11px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.primary { background: #1877f2; color: white; }
+.secondary { margin-top: 8px; background: rgba(233, 237, 243, 0.9); color: #273142; }
+button:disabled { opacity: .5; cursor: default; }
+
+.status {
+  margin-top: 15px;
+  padding: 11px;
+  border-radius: 9px;
+  /* Pudełko statusu też lekko przezroczyste, żeby przepuszczało grafikę */
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid #e1e5ec;
+}
+
+.status-title {
+  font-size: 11px;
+  font-weight: 750;
+  text-transform: uppercase;
+  color: #6b7280;
+  margin-bottom: 4px;
+}
+
+#statusText { font-size: 13px; }
+
+.warning {
+  margin-top: 12px;
+  padding: 10px;
+  border-radius: 8px;
+  /* Ostrzeżenie również z półprzezroczystym tłem */
+  background: rgba(255, 248, 230, 0.85);
+  color: #7a5a00;
+  font-size: 11px;
+  line-height: 1.4;
+}
+
+.hidden { display: none !important; }

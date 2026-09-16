@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Facebook Report QA</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <main class="app">
+    <header>
+      <div class="brand">FB Bulk Report</div>
+      <div class="subtitle">Automatyczny system zgłoszeń</div>
+    </header>
+
+    <!-- Checkbox trybu losowego -->
+    <label class="field checkbox-field" style="flex-direction: row; align-items: center; gap: 10px; cursor: pointer;">
+      <input type="checkbox" id="trybLosowy" style="width: 18px; height: 18px;">
+      <span style="font-weight: bold; color: #2563eb;">Tryb losowy</span>
+    </label>
+
+    <div id="manualnePola">
+      <label class="field">
+        <span>Powód zgłoszenia</span>
+        <select id="powod"></select>
+      </label>
+
+      <section id="podpowodWrap" class="hidden">
+        <label class="field">
+          <span>Szczegółowy powód</span>
+          <select id="podpowod"></select>
+        </label>
+
+        <section id="podpowod2Wrap" class="hidden">
+          <label class="field">
+            <span>Konkretny problem</span>
+            <select id="podpowod2"></select>
+          </label>
+        </section>
+
+        <label id="ktoWrap" class="field hidden">
+          <span>Kto jest nękany?</span>
+          <select id="kto"></select>
+        </label>
+
+        <label id="wiekWrap" class="field hidden">
+          <span>Czy osoba może mieć mniej niż 18 lat?</span>
+          <select id="wiek"></select>
+        </label>
+      </section>
+    </div>
+
+    <!-- POLE: Liczba powtórzeń -->
+    <label class="field">
+      <span>Liczba powtórzeń</span>
+      <input type="number" id="powtorzenia" min="1" value="1">
+    </label>
+
+    <!-- POLE: Czas oczekiwania na zgłoszenie (w sekundach) -->
+    <label class="field">
+      <span>Czas oczekiwania na formularz (sek.)</span>
+      <input type="number" id="dialogDelayInput" min="1" value="10">
+    </label>
+
+    <button id="start" class="primary">Rozpocznij zgłaszanie</button>
+    <button id="stop" class="secondary" disabled>Zatrzymaj</button>
+
+    <div class="status">
+      <div class="status-title">Status</div>
+      <div id="statusText">Gotowy</div>
+    </div>
+
+    <div class="warning">
+      Skrypt automatycznie finalizuje całą procedurę zgłoszenia.
+    </div>
+  </main>
+  <script src="popup.js"></script>
+</body>
+</html>

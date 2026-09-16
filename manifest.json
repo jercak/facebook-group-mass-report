@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+  "name": "Facebook Report QA",
+  "version": "1.0.0",
+  "description": "QA helper for testing the group-report dialog on the currently open Facebook group.",
+  "permissions": [
+    "https://www.facebook.com/groups/*"
+  ],
+  "browser_action": {
+    "default_title": "Facebook Report QA",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "logo.jpg",
+      "48": "logo.jpg",
+      "128": "logo.jpg"
+    }
+  },
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.facebook.com/groups/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
