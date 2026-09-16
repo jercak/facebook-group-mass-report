@@ -2,7 +2,8 @@ Facebook Mass Report
 
 Proste rozszerzenie do przeglądarki Firefox ułatwiające zgłaszania treści na grupach na Facebooku. 
 
-Instrukcja instalacji dla użytkowników:
+Instrukcja instalacji
+
 Aby uruchomić rozszerzenie w przeglądarce Firefox, należy wykonać następujące kroki:
 
 - Pobierz spakowaną paczkę aplikacji: kliknij plik GroupReport.zip w repozytorium, a następnie pobierz go na dysk lokalny.
