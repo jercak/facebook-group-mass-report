@@ -5,13 +5,13 @@ Proste rozszerzenie do przeglądarki Firefox ułatwiające zgłaszania treści n
 Instrukcja instalacji dla użytkowników:
 Aby uruchomić rozszerzenie w przeglądarce Firefox, należy wykonać następujące kroki:
 
-    Pobierz spakowaną paczkę aplikacji: kliknij plik GroupReport.zip w repozytorium, a następnie pobierz go na dysk lokalny.
+- Pobierz spakowaną paczkę aplikacji: kliknij plik GroupReport.zip w repozytorium, a następnie pobierz go na dysk lokalny.
 
-    Uruchom przeglądarkę Firefox, wpisz w pasku adresu about:debugging#/runtime i zatwierdź klawiszem Enter.
+- Uruchom przeglądarkę Firefox, wpisz w pasku adresu about:debugging#/runtime i zatwierdź klawiszem Enter.
 
-    W menu bocznym po lewej stronie wybierz sekcję Ten program Firefox.
+- W menu bocznym po lewej stronie wybierz sekcję Ten program Firefox.
 
-    Kliknij przycisk Załaduj tymczasowy dodatek... i wskaż pobrany plik GroupReport.zip.
+- Kliknij przycisk Załaduj tymczasowy dodatek... i wskaż pobrany plik GroupReport.zip.
 
 Po wykonaniu tych czynności rozszerzenie zostanie załadowane do przeglądarki i będzie gotowe do pracy.
 
