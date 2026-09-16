@@ -17,6 +17,7 @@ Aby uruchomić rozszerzenie w przeglądarce Firefox, należy wykonać następuj�
 Po wykonaniu tych czynności rozszerzenie zostanie załadowane do przeglądarki i będzie gotowe do pracy.
 
 Kod źródłowy dla programistów:
+
 Jeśli chcesz przejrzeć kod lub go zmodyfikować, w repo znajdziesz pełny zestaw plików źródłowych (manifest.json, skrypty, arkusze stylów oraz ikony).
 
 
