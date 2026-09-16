@@ -1,4 +1,4 @@
-Facebook Mass Report
+# Facebook Mass Report
 
 Proste rozszerzenie do przeglądarki Firefox ułatwiające zgłaszania treści na grupach na Facebooku. 
 
